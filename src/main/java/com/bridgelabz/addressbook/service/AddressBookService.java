@@ -10,6 +10,7 @@ import com.bridgelabz.addressbook.dto.AddressDTO;
 import com.bridgelabz.addressbook.exception.AddressBookNotFoundException;
 import com.bridgelabz.addressbook.model.AddressBookModel;
 import com.bridgelabz.addressbook.repository.AddressBookRepository;
+
 @Service
 public class AddressBookService implements IAddressBookService{
 	@Autowired
@@ -52,7 +53,6 @@ public class AddressBookService implements IAddressBookService{
 		}
 		throw new AddressBookNotFoundException(400, "AddressBook not found");
 	}
-
 
 	@Override
 	public AddressBookModel deleteAddressBookData(Long id) {
