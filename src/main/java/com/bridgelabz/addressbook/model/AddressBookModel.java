@@ -23,7 +23,8 @@ public class AddressBookModel {
 	private String city;	
 	private String state;
 	private long pincode;
-	private String email;
+	private String emailId;
+	private String password;
 
 	public AddressBookModel() {
 
@@ -37,6 +38,7 @@ public class AddressBookModel {
 		this.city = addressdto.getCity();
 		this.state = addressdto.getState();
 		this.pincode = addressdto.getPincode();
-		this.email = addressdto.getEmail();
+		this.emailId = addressdto.getEmailId();
+		this.password = addressdto.getPassword();
 	}
 }
